@@ -54,7 +54,7 @@ def send_email(message):
     server.quit()
     print("Email sent!")
 
-schedule.every().day.at("18:00").do(check_stock)    ## execute daily at 6 pm
+#schedule.every().day.at("18:00").do(check_stock)    ## execute daily at 6 pm
 #schedule.every(10).seconds.do(check_stock)   # for testing only
 report = check_stock()   # for testing only
 print(report)
