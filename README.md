@@ -4,7 +4,9 @@
 
 
 
-Create an SNS topic for email notifications
+
+  
+##### Create an SNS topic for email notifications
 
 ![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
 
