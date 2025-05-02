@@ -8,8 +8,11 @@
 ![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
 
 
-##### Create a lambda function named SendSNSEmail by executing the create_lambda_fucntion.py
+##### Create a lambda function named SendSNSEmail by executing the create_lambda_fucntion.py  
 
+$ python3 create_lambda_function.py
+
+![image](https://github.com/user-attachments/assets/50e395a2-ceaa-4115-adc8-97025a290c86)
 
 
 ##### Execute the code from the local host, it will retrieve the share price and invoke the AWS Lambda function
@@ -27,3 +30,4 @@
 
 ##### Remove the lambda function by executing the delete_lambda_function.py
 
+![image](https://github.com/user-attachments/assets/5940c618-8799-4a2c-a992-bd2fb9b6e706)
