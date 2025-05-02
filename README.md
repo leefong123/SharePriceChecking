@@ -1,17 +1,16 @@
 ### 
-#### A simple program to scrape DBS share price from Yahoo Finance, check if the price falls below a target value, and if it does, send an email alert to the user.
-#### The alert system is integrated with AWS Lambda to send an email via SNS. 
-#### To avoid errors from the Lambda client, you need to manually creat the Lambda function and SNS topic. 
-##### 1. Create a lambda function named SendSNSEmail, and copy the contents of lambda_function.py into it.   
-##### 2. Create an SNS topic and save the topic arn as environment variable in the lambda function.
-##### Have fun trying ...  
+#### A program to scrape DBS share price from Yahoo Finance, check if the price falls below a target value, and if it does, send an email alert to the user.
+#### The alert system is integrated with AWS Lambda to send an email via SNS.   
 
+
+##### Create a lambda function named SendSNSEmail, and copy the contents of lambda_function.py into it.   
+##### Create an SNS topic and save the topic arn as environment variable in the lambda function.
   
-##### Create an SNS topic for email notifications
+##### SNS topic for email notifications
 
 ![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
 
-##### Execute the code from the local host to retrieve the share price and invoke the AWS Lambda function
+##### Execute the code from the local host, it will retrieve the share price and invoke the AWS Lambda function
 
 ![image](https://github.com/user-attachments/assets/e4454939-3193-4488-89da-817d41dc4641)
 

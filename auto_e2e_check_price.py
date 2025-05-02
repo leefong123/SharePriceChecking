@@ -1,4 +1,6 @@
 # Work in progress...
+# automate creation and deletion of lambda  function and sns topic in separate program
+# fire api call tfire api o perform real-time purchasing
 
 import json
 import os
