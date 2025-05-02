@@ -3,11 +3,11 @@ import boto3
 import os
 
 def lambda_handler(event, context):
-    # TODO implement
     message = event.get('message', 'No message provided')
 
+    topic_arn = event.get('topic_arn', 'No topic arn')
+
     sns = boto3.client('sns')
-    topic_arn = os.environ['SNS_TOPIC_ARN']
 
     response  = sns.publish(
         TopicArn=topic_arn,

@@ -3,12 +3,14 @@
 #### The alert system is integrated with AWS Lambda to send an email via SNS.   
 
 
-##### Create a lambda function named SendSNSEmail, and copy the contents of lambda_function.py into it.   
-##### Create an SNS topic and save the topic arn as environment variable in the lambda function.
+##### Create an SNS topic for email notification. 
   
-##### SNS topic for email notifications
-
 ![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
+
+
+##### Create a lambda function named SendSNSEmail by executing the create_lambda_fucntion.py
+
+
 
 ##### Execute the code from the local host, it will retrieve the share price and invoke the AWS Lambda function
 
@@ -22,4 +24,6 @@
 ##### An email containing the share price was received
 ![image](https://github.com/user-attachments/assets/dd607439-d9cf-4074-8f66-43b9716c6bba)
 
+
+##### Remove the lambda function by executing the delete_lambda_function.py
 
