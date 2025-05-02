@@ -8,7 +8,7 @@
 ![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
 
 
-##### Create a lambda function named SendSNSEmail by executing the create_lambda_fucntion.py  
+##### Create a lambda function named SendSNSEmail by executing the create_lambda_fucntion
 
 $ python3 create_lambda_function.py
 
@@ -21,13 +21,15 @@ $ python3 create_lambda_function.py
 
 
 ##### The email notification is sent by SNS, which is triggered by a Lambda function
-![image](https://github.com/user-attachments/assets/73625ab8-0253-42a5-ba90-185052572381)
+
+![image](https://github.com/user-attachments/assets/1d97c339-5699-4e89-801a-0a1bf7d89b72)
 
 
 ##### An email containing the share price was received
-![image](https://github.com/user-attachments/assets/dd607439-d9cf-4074-8f66-43b9716c6bba)
+
+![image](https://github.com/user-attachments/assets/a77ae528-dfc5-463a-8f35-88ef2ae51dbf)
 
 
-##### Remove the lambda function by executing the delete_lambda_function.py
+##### Remove the lambda function by executing the delete_lambda_function
 
 ![image](https://github.com/user-attachments/assets/5940c618-8799-4a2c-a992-bd2fb9b6e706)
