@@ -1,4 +1,4 @@
-# Exception handling to be continued...
+# Work in progress...
 
 import json
 import os
@@ -20,41 +20,13 @@ def check_stock():
     name = ticker.info.get('longName')
     report = ""
 
-
     if price < threshold:
         report = f"{name} is below target ${threshold}, Price is ${price}\n"
-
-    if report:
-       now = datetime.now()
-       timestamp = now.strftime("%Y%m%d %H%M%S")
-       log_message = f"{timestamp} {report}"
-       print(log_message)
-       with open("/tmp/check-price.log", "a") as f:
-            f.write(log_message)
-       #send_email(report)
     else:
-        print("Do nothing")
+        report = f"Do nothing\n"
 
     return report
 
-
-def send_email(message):
-    sender = os.getenv("MAIL_SENDER")
-    recipient = os.getenv("MAIL_USER")
-    subject = os.getenv("MAIL_SUBJECT")
-    appkey = os.getenv("MAIL_APPKEY")
-    
-    msg = MIMEText(message)
-    msg['Subject'] = subject
-    msg['From'] = sender
-    msg['To'] = recipient
-
-    server = smtplib.SMTP("smtp.gmail.com", 587)
-    server.starttls()
-    server.login(recipient, appkey)
-    server.sendmail(sender, [recipient], msg.as_string())
-    server.quit()
-    print("Email sent!")
 
 #schedule.every().day.at("18:00").do(check_stock)    ## execute daily at 6 pm
 #schedule.every(10).seconds.do(check_stock)   # for testing only
