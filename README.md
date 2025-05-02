@@ -1,6 +1,6 @@
 ### 
 #### A program to scrape DBS share price from Yahoo Finance, check if the price falls below a target value, and if it does, send an email alert to the user.
-#### The alert system is integrated with AWS Lambda to send an email via SNS.   
+#### The alerting approach uses AWS Lambda to send an email via SNS.   
 
 
 ##### Create an SNS topic for email notification. 
