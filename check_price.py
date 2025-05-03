@@ -1,12 +1,4 @@
 import json
-import os
-import requests
-import schedule
-import time
-import smtplib
-from email.mime.text import MIMEText
-import yfinance as yf
-from datetime import datetime
 import boto3
 
 def check_stock():
@@ -22,7 +14,6 @@ def check_stock():
         report = f"{name} is below target ${threshold}, Price is ${price}\n"
     else:
         report = "--"
-
     return report
 
 report = check_stock()  
