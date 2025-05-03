@@ -15,19 +15,26 @@ $ python3 create_lambda_function.py
 ![image](https://github.com/user-attachments/assets/50e395a2-ceaa-4115-adc8-97025a290c86)
 
 
-##### Execute the code from the local host, it will retrieve the share price, invoke the AWS Lambda function deployed on AWS Cloud, and publish the share price to SNS which will then send an email to the user
+##### Execute the code from the local host, it will invoke the Lambda function deployed on AWS, retrieve the share price, and publish it to SNS, which will then send an email to the user  
+
+![image](https://github.com/user-attachments/assets/33b14c46-d742-462b-bdff-b34346e196fb)
+
 
 ![image](https://github.com/user-attachments/assets/e4454939-3193-4488-89da-817d41dc4641)
 
 
 ##### An email notification containing the share price was received
 
+![image](https://github.com/user-attachments/assets/e77724a4-4be7-47d3-b4ee-d1581dd1573e)
+
+
 ![image](https://github.com/user-attachments/assets/1d97c339-5699-4e89-801a-0a1bf7d89b72)
 
 
-  
-
 ![image](https://github.com/user-attachments/assets/a77ae528-dfc5-463a-8f35-88ef2ae51dbf)
+
+![image](https://github.com/user-attachments/assets/5d63b7d7-8b51-4743-995a-b9a7f24419e4)
+
 
 
 ##### Remove the lambda function by running the delete_lambda_function.py
