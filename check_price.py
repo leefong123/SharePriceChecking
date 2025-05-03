@@ -29,12 +29,32 @@ report = check_stock()
 print(report)
 
 if report != "--":
-    exit(0)
     topic_arn = os.getenv("SNS_TOPIC_ARN")
-    event = { "message" : report, "topic_arn" : topic_arn }
+    event = { "message" : report, 
+             "topic_arn" : topic_arn }
     lambda_client = boto3.client('lambda', region_name='ap-southeast-1')
 
     response = lambda_client.invoke(FunctionName='SendSNSEmail', InvocationType='Event', Payload=json.dumps(event))
     print("lambda client invocation response", response)
 else:
     print("Not Match")
+
+'''
+topic_arn = os.getenv("SNS_TOPIC_ARN")
+sns = boto3.client('sns')
+
+response  = sns.publish(
+    TopicArn=topic_arn,
+    Message=report,
+    Subject="Share Price Application Email Notification"
+) 
+
+print(f"Message sent with ID (SNS): {response['MessageId']}")
+'''
+
+
+
+
+
+
+
