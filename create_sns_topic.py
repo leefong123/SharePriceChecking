@@ -9,8 +9,8 @@ def create_ssm_para(topic_arn):
 
     print("Parameter store created ==> ", response) 
 
-if len(sys.argv) < 2:
-    print("Usage: python script.py <parameter>")
+if len(sys.argv) < 3:
+    print("Usage: python script.py <SNS Topic Name> <User Email Address>")
     sys.exit(1)
 
 sns_topic = sys.argv[1]  
