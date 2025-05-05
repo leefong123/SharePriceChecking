@@ -12,7 +12,8 @@ Summary of Steps to create and manage AWS Resources
 
   
 
-1. To create an SNS topic and store its ARN in Parameter Store, run the following command
+
+1.To create an SNS topic and store its ARN in Parameter Store, run the following command
    
 $ python3 create_sns_topic.py SNSByEmail abc123@gmail.com  
 
