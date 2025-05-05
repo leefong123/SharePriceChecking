@@ -1,11 +1,6 @@
 #### A project to scrape DBS share price from Yahoo Finance, check if the price falls below a target value, and if it does, send an email alert to the user. The alerting approach uses AWS Lambda to send an email via SNS   
 
 
-
-##### Create an SNS topic for email notification. You can either use AWS management console or run create_sns_topic.py to create it 
-$ python3 create_sns_function.py
-  
-![image](https://github.com/user-attachments/assets/57764dde-a2f3-49fb-bf04-bfe659a1060a)
 ##### Follow the following step-by-step guide to create and manage AWS resources
 Summary of Steps to create and manage AWS Resources
 1.	Create an SNS topic and store its ARN in Parameter Store
