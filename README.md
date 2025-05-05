@@ -10,10 +10,10 @@ Summary of Steps to create and manage AWS Resources
 4.	Delete the Lambda function from AWS
 5.	Delete the SNS topic, its subscription and the related Parameter Store
 
+
+
   
-
-
-1.To create an SNS topic and store its ARN in Parameter Store, run the following command
+1. To create an SNS topic and store its ARN in Parameter Store, run the following command
    
 $ python3 create_sns_topic.py SNSByEmail abc123@gmail.com  
 
