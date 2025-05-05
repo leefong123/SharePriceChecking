@@ -2,6 +2,7 @@
 #### The alerting approach uses AWS Lambda to send an email via SNS   
 
 
+
 ##### Create an SNS topic for email notification. You can either use AWS management console or run create_sns_topic.py to create it 
 $ python3 create_sns_function.py
   
