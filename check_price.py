@@ -1,7 +1,8 @@
 import json
 import boto3
+import yfinance as yf
 
-def check_stock():
+def check_stock():    ## to retrieve price, copy content of  this function into get_price() function in lambda_funciton.py
     print("Retrieving data...")
     threshold = 48
     ticker = yf.Ticker("D05.SI")
@@ -16,9 +17,14 @@ def check_stock():
         report = "--"
     return report
 
+
+
+
 report = check_stock()  
 print(report)
 
+
+'''
 if report != "--":
     topic_arn = os.getenv("SNS_TOPIC_ARN")
     event = { "message" : report, 
@@ -30,6 +36,7 @@ if report != "--":
 else:
     print("Not Match")
 
+'''
 '''
 topic_arn = os.getenv("SNS_TOPIC_ARN")
 sns = boto3.client('sns')
