@@ -2,7 +2,7 @@ import json
 import boto3
 import yfinance as yf
 
-def check_stock():    ## to retrieve price, copy content of  this function into get_price() function in lambda_funciton.py
+def get_stock():    ## to retrieve price, copy content of  this function into get_price() function in lambda_funciton.py
     print("Retrieving data...")
     threshold = 48
     ticker = yf.Ticker("D05.SI")
@@ -20,7 +20,7 @@ def check_stock():    ## to retrieve price, copy content of  this function into 
 
 
 
-report = check_stock()  
+report = get_stock()  
 print(report)
 
 

@@ -1,9 +1,9 @@
 import boto3
 
-
 def get_price(stock_code, threshold):
-    ## point to note: to be replaced by actual code to retireve the  price here as to avoid chagrges to my personal aws account.
-    ## run the check_price prgraom to test the share price retrieing portion
+    # Implement the get_price function from check_price.py here to retrieve the price from Yahoo Finance. 
+    # Omit it for now to avoid unnecessary charges
+
     price = 38   ## for testing only
     return price
 
